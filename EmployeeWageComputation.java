@@ -45,11 +45,30 @@ public class EmployeeWageComputation
         }
 
     }
+    void switchStatement()
+    {
+        switch (Attend2)
+        {
+            case 1:
+                EmpRatePerHr = 20;
+                EmpHrs = 8;
+                w = EmpRatePerHr * EmpHrs;
+                System.out.println("Employee Wage:-" + w);
+                break;
+            case 0:
+                EmpRatePerHr = 20;
+                EmpHrs = 4;
+                w = EmpRatePerHr * EmpHrs;
+                System.out.println("Employee Wage:-" + w);
+                break;
+        }
+    }
     public static void main(String[] args)
     {
         System.out.println("Welcome to Employee Wage Computation Program");
         EmployeeWageComputation e=new EmployeeWageComputation();
         e.attendance();
         e.wage();
+        e.switchStatement();
     }
 }
