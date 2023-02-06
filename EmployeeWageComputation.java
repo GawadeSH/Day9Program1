@@ -107,6 +107,18 @@ public class EmployeeWageComputation
        }
         System.out.println("manthly salary is:-"+monthlySalary);
     }
+    void tataTechnology(int er,int h)
+    {
+
+        w = er * h;
+        System.out.println("salary of employee of Tata technology is:-"+w);
+    }
+    void mahindra(int er,int h)
+    {
+
+        w = er * h;
+        System.out.println("salary of employee of Mahindra is :-"+w);
+    }
     public static void main(String[] args)
     {
         System.out.println("Welcome to Employee Wage Computation Program");
@@ -116,5 +128,8 @@ public class EmployeeWageComputation
         e.switchStatement();
         e.monthSalary();
         e.monthlySalary2();
+        e.tataTechnology(30,8);
+        e.mahindra(25,9);
     }
 }
+
