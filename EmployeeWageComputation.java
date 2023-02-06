@@ -63,6 +63,21 @@ public class EmployeeWageComputation
                 break;
         }
     }
+    int a = 20;               //Total working days
+
+    int sal = 0;
+
+    void monthSalary()
+    {
+        EmpRatePerHr = 20;
+        EmpHrs = 8;
+        for (int day = 1; day <= a; day++)
+        {
+            sal = sal + (EmpRatePerHr * EmpHrs);
+        }
+        System.out.println("salary of month:-"+sal);
+
+    }
     public static void main(String[] args)
     {
         System.out.println("Welcome to Employee Wage Computation Program");
@@ -70,5 +85,6 @@ public class EmployeeWageComputation
         e.attendance();
         e.wage();
         e.switchStatement();
+        e.monthSalary();
     }
 }
